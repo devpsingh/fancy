@@ -29,9 +29,7 @@ Route::get('/shopall/products/{slug}', [App\Http\Controllers\ProductGrid::class,
 Route::get('/view/collections/{slug}',[App\Http\Controllers\ViewCategoryController::class, 'index'])->name('category');
 
 Route::namespace("Admin")->prefix('admin')->group(function(){
-    Route::get('/forgot-password', function () {
-        return view('auth.forgot-password');
-    })->name('password.request');
+    
     Route::get('/', [App\Http\Controllers\Admin\HomeController::class, 'index'])->name('admin.home');
     //Route::get('/', 'HomeController@index')->name('admin.home');
     Route::namespace('Auth')->group(function(){
