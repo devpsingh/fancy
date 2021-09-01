@@ -1,0 +1,16 @@
+.main-header-left .logo-wrapper img{
+    width: 100%;
+    max-width: 187px;
+}
+
+
+
+
+@media only screen and (max-width: 991px){
+    .page-wrapper .page-main-header .main-header-left .logo-wrapper img {
+        height: 40px;
+    }
+    .page-wrapper .page-main-header .main-header-left{
+        padding: 0;
+    }
+}
